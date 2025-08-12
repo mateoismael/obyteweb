@@ -13,8 +13,8 @@ export default function HomePage() {
   }, []);
   return (
     <div>
-      <section className="bg-gradient-to-b from-blue-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 py-16 text-center">
+      <section className="bg-gradient-to-b from-white to-[var(--brand-50)]">
+        <div className="container py-16 text-center">
           <h1 className="text-4xl md:text-5xl font-bold">
             Soluciones TI a tu medida en Perú
           </h1>
@@ -23,17 +23,17 @@ export default function HomePage() {
             seguridad para que tu negocio no se detenga.
           </p>
           <div className="mt-6 flex items-center justify-center gap-3">
-            <Link to="/contacto" className="px-5 py-3 rounded text-white" style={{ backgroundColor: 'var(--brand-700)' }}>
+            <Link to="/contacto" className="btn btn-primary">
               Solicitar asesoría
             </Link>
-            <a href="#" className="px-5 py-3 rounded border" style={{ borderColor: 'var(--brand-700)', color: 'var(--brand-700)' }}>
+            <a href="#" className="btn btn-outline">
               WhatsApp
             </a>
           </div>
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 py-12">
+      <section className="container py-12">
         <h2 className="text-2xl font-semibold">Soluciones destacadas</h2>
         <p className="text-gray-600">
           Explora nuestras soluciones para impulsar tu operación.
@@ -50,7 +50,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 py-12">
+      <section className="container py-12">
         <h2 className="text-2xl font-semibold">Servicios</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-6">
           {sections.servicios.map((s) => (
@@ -64,7 +64,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 py-12">
+      <section className="container py-12">
         <h2 className="text-2xl font-semibold">Métricas</h2>
         <p className="text-gray-600">
           +150 proyectos entregados • 8 años de experiencia • SLA 99.9% • 500 TB
@@ -72,7 +72,7 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 py-12">
+      <section className="container py-12">
         <h2 className="text-2xl font-semibold">Mini-FAQ</h2>
         <div className="mt-4 space-y-2 text-gray-700">
           <details className="border rounded p-3">
@@ -89,10 +89,7 @@ export default function HomePage() {
           </details>
         </div>
         <div className="mt-6">
-          <Link
-            to="/contacto"
-            className="px-5 py-3 rounded bg-blue-700 text-white"
-          >
+          <Link to="/contacto" className="btn btn-primary">
             Agenda una consultoría de 30 minutos sin costo
           </Link>
         </div>
@@ -111,11 +108,11 @@ function Card({
   to: string;
 }) {
   return (
-    <div className="border rounded p-5">
+    <div className="card">
       <h3 className="font-semibold text-lg">{title}</h3>
       <p className="text-gray-600 mt-2 text-sm">{text}</p>
       <div className="mt-4">
-  <Link to={to} style={{ color: 'var(--brand-700)' }}>
+        <Link to={to} className="link">
           Ver más →
         </Link>
       </div>

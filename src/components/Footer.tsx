@@ -4,7 +4,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer className="border-t mt-12">
-      <div className="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8 text-sm">
+      <div className="container py-10 grid md:grid-cols-4 gap-8 text-sm">
         <div>
           <div className="font-semibold text-lg">Ohanabyte</div>
           <p className="text-gray-600 mt-2">

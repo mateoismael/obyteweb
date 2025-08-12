@@ -5,9 +5,9 @@ import WhatsAppFloat from "../components/WhatsAppFloat";
 
 export default function RootLayout() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1" id="main-content">
         <Outlet />
       </main>
       <Footer />

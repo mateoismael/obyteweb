@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Brand palette (edit to match your logo) */
+:root {
+	--brand: #0f52ba;         /* primary */
+	--brand-600: #0e47a1;
+	--brand-700: #0c3e8c;
+	--brand-50: #e8f0ff;
+	--accent: #f59e0b;        /* accent */
+	--neutral-900: #0b1220;   /* text */
+	--neutral-700: #334155;   /* subtitles */
+	--neutral-100: #f8fafc;   /* backgrounds */
+}
+
+/* Base styles */
+html, body { height: 100%; }
+body { color: var(--neutral-900); background: #fff; }
+a { transition: color 120ms, background-color 120ms, border-color 120ms; }

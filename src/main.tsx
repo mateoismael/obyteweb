@@ -13,7 +13,7 @@ import ComputoColaboracion from "./routes/soluciones/ComputoColaboracion.tsx";
 import CloudIaaS from "./routes/soluciones/CloudIaaS.tsx";
 import SoporteMonitoreo from "./routes/soluciones/SoporteMonitoreo.tsx";
 import CableadoEstructurado from "./routes/soluciones/CableadoEstructurado.tsx";
-import ServiciosIndex from "./routes/servicios/Index.tsx";
+import ServiciosRedirect from "./routes/servicios/Redirect.tsx";
 import NosotrosPage from "./routes/Nosotros.tsx";
 import BlogIndex from "./routes/blog/Index.tsx";
 import BlogPost from "./routes/blog/Post.tsx";
@@ -50,7 +50,14 @@ const router = createBrowserRouter([
         path: "soluciones/cableado-estructurado",
         element: <CableadoEstructurado />,
       },
-      { path: "servicios", element: <ServiciosIndex /> },
+      { path: "servicios", element: <ServiciosRedirect /> },
+      // Redirects para servicios específicos que ahora están en soluciones
+      { path: "servicios/asesoria-ti", element: <ServiciosRedirect /> },
+      { path: "servicios/implementacion", element: <ServiciosRedirect /> },
+      { path: "servicios/soporte-monitoreo", element: <ServiciosRedirect /> },
+      { path: "servicios/mantenimiento", element: <ServiciosRedirect /> },
+      { path: "servicios/cableado-estructurado", element: <ServiciosRedirect /> },
+      { path: "servicios/capacitaciones", element: <ServiciosRedirect /> },
       { path: "nosotros", element: <NosotrosPage /> },
       { path: "blog", element: <BlogIndex /> },
       { path: "blog/:slug", element: <BlogPost /> },

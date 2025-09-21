@@ -166,15 +166,27 @@ export default function HomePage() {
               />
             ))}
           </div>
+          
+          <div className="text-center mt-12">
+            <Link
+              to="/soluciones"
+              className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Explorar Todas las Soluciones
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Services Section - Now part of Soluciones */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 bg-amber-100 text-amber-800 text-sm font-semibold rounded-full border border-amber-200 mb-4">
-              🛠️ Nuestros servicios
+              🛠️ Servicios profesionales
             </div>
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
               Servicios especializados
@@ -191,10 +203,22 @@ export default function HomePage() {
                 key={s.slug}
                 title={s.title}
                 text={s.text}
-                to={`/servicios/${s.slug}`}
+                to={`/soluciones/${s.slug}`}
                 compact
               />
             ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link
+              to="/soluciones"
+              className="inline-flex items-center px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Ver Todas las Soluciones y Servicios
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

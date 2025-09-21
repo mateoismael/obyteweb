@@ -90,14 +90,6 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/servicios"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  Servicios
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/nosotros"
                   className="text-gray-300 hover:text-white transition-colors"
                 >

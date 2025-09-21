@@ -46,18 +46,6 @@ export default function Navbar() {
               Soluciones
             </NavLink>
             <NavLink
-              to="/servicios"
-              className={({ isActive }) =>
-                `px-4 py-2 rounded-lg font-medium transition-all ${
-                  isActive
-                    ? "text-blue-600 bg-blue-50"
-                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
-                }`
-              }
-            >
-              Servicios
-            </NavLink>
-            <NavLink
               to="/nosotros"
               className={({ isActive }) =>
                 `px-4 py-2 rounded-lg font-medium transition-all ${
@@ -164,12 +152,6 @@ export default function Navbar() {
               to="/soluciones"
             >
               Soluciones
-            </Link>
-            <Link
-              className="block px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-all"
-              to="/servicios"
-            >
-              Servicios
             </Link>
             <Link
               className="block px-4 py-2 rounded-lg font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-all"

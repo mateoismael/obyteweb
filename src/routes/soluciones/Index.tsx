@@ -22,6 +22,8 @@ const soluciones = [
   { slug: "proteccion-de-datos", title: "Protección de datos" },
   { slug: "computo-colaboracion", title: "Cómputo & Colaboración" },
   { slug: "cloud-iaas", title: "Cloud / IaaS" },
+  { slug: "soporte-monitoreo", title: "Soporte & Monitoreo" },
+  { slug: "cableado-estructurado", title: "Cableado Estructurado" },
 ];
 
 export default function SolucionesIndex() {

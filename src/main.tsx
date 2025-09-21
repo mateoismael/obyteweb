@@ -11,6 +11,8 @@ import RedesSeguridad from "./routes/soluciones/RedesSeguridad.tsx";
 import ProteccionDatos from "./routes/soluciones/ProteccionDatos.tsx";
 import ComputoColaboracion from "./routes/soluciones/ComputoColaboracion.tsx";
 import CloudIaaS from "./routes/soluciones/CloudIaaS.tsx";
+import SoporteMonitoreo from "./routes/soluciones/SoporteMonitoreo.tsx";
+import CableadoEstructurado from "./routes/soluciones/CableadoEstructurado.tsx";
 import ServiciosIndex from "./routes/servicios/Index.tsx";
 import NosotrosPage from "./routes/Nosotros.tsx";
 import BlogIndex from "./routes/blog/Index.tsx";
@@ -43,6 +45,11 @@ const router = createBrowserRouter([
         element: <ComputoColaboracion />,
       },
       { path: "soluciones/cloud-iaas", element: <CloudIaaS /> },
+      { path: "soluciones/soporte-monitoreo", element: <SoporteMonitoreo /> },
+      {
+        path: "soluciones/cableado-estructurado",
+        element: <CableadoEstructurado />,
+      },
       { path: "servicios", element: <ServiciosIndex /> },
       { path: "nosotros", element: <NosotrosPage /> },
       { path: "blog", element: <BlogIndex /> },

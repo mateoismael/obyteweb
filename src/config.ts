@@ -3,7 +3,7 @@ export const SITE = {
   phone: "", // TODO: +51 999 999 999
   emailVentas: "gproyectos@ohanabyte.com.pe",
   emailGerencia: "gerencia@ohanabyte.com.pe",
-  whatsappNumber: "", // TODO: add number, e.g., +51999999999
+  whatsappNumber: "+51960560901",
   // Toggle sections
   showPartners: false, // oculta la franja de "partners" por defecto
   socials: {
@@ -12,10 +12,12 @@ export const SITE = {
     youtube: "",
     instagram: "",
   },
+  whatsappMessage: "Hola, vengo desde la web de Ohanabyte y me interesa conocer más sobre sus servicios de TI.",
   get whatsappUrl() {
-    return this.whatsappNumber
-      ? `https://wa.me/${this.whatsappNumber.replace(/[^\d]/g, "")}`
-      : "#";
+    if (!this.whatsappNumber) return "#";
+    const phone = this.whatsappNumber.replace(/[^\d]/g, "");
+    const message = encodeURIComponent(this.whatsappMessage);
+    return `https://wa.me/${phone}?text=${message}`;
   },
   get telUrl() {
     return this.phone ? `tel:${this.phone.replace(/\s+/g, "")}` : "#";
